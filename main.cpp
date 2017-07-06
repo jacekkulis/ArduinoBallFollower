@@ -6,7 +6,7 @@
 
 #define ARDUINO_COMMUNICATION 1
 #define TARGET_FPS 30
-#define MSE_THRESHOLD 10
+#define MSE_THRESHOLD 7
 #define PI 3.141592
 
 bool foundCircle = false;
@@ -223,10 +223,8 @@ int main()
 	//create a window called "Control"
 
 	////RED
-	/*int iLowH = 170;
-	int iHighH = 179;*/
-	int iLowH = 0;
-	int iHighH = 10;
+	gint iLowH = 170;
+	int iHighH = 179;
 
 	int iLowS = 110;
 	int iHighS = 255;
